@@ -1,0 +1,23 @@
+/* styles.css */
+
+.scrolling-message {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    animation: scrollText 8s linear infinite; /* Adjust the animation speed as needed */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

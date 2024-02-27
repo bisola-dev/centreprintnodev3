@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from thememinister.com/crm/view-tsaction.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Aug 2019 13:28:46 GMT -->
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Exam </title>
+      <!-- Favicon and touch icons -->
+      <link rel="shortcut icon" href="assets/dist/img/ico/favicon.png" type="image/x-icon">
+      <!-- Start Global Mandatory Style
+         =====================================================================-->
+      <!-- jquery-ui css -->
+      <!-- Inside your HTML file -->
+          <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+      <link href="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+      <!-- Bootstrap -->
+      <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+      <!-- Bootstrap rtl -->
+      <!--<link href="assets/bootstrap-rtl/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>-->
+      <!-- Lobipanel css -->
+      <link href="assets/plugins/lobipanel/lobipanel.min.css" rel="stylesheet" type="text/css"/>
+      <!-- Pace css -->
+      <link href="assets/plugins/pace/flash.css" rel="stylesheet" type="text/css"/>
+      <!-- Font Awesome -->
+      <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+      <!-- Pe-icon -->
+      <link href="assets/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css"/>
+      <!-- Themify icons -->
+      <link href="assets/themify-icons/themify-icons.css" rel="stylesheet" type="text/css"/>
+      <!-- dataTables css -->
+      <link href="assets/plugins/datatables/dataTables.min.css" rel="stylesheet" type="text/css"/>
+      <!-- End Global Mandatory Style
+         =====================================================================-->
+      <!-- Start Theme Layout Style
+         =====================================================================-->
+      <!-- Theme style -->
+      <link href="assets/dist/css/stylecrm.css" rel="stylesheet" type="text/css"/>
+      <!-- Theme style rtl -->
+      <!--<link href="assets/dist/css/stylecrm-rtl.css" rel="stylesheet" type="text/css"/>-->
+      <!-- End Theme Layout Style
+         =====================================================================-->
+   </head>
+   <body class="hold-transition sidebar-mini">
+    <!--preloader-->
+      <div id="preloader">
+         <div id="status"></div>
+      </div>
+      <!-- Site wrapper -->
+      <div class="wrapper">
+         <header class="main-header">
+            <a href="index-2.html" class="logo">
+               <!-- Logo -->
+               <span class="logo-mini">
+               <img src="assets/dist/img/mini-logo.png" alt="">
+               </span>
+               <span class="logo-lg">
+               <img src="assets/dist/img/logss.png" alt="">
+               </span>
+            </a>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top">
+               <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                  <!-- Sidebar toggle button-->
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="pe-7s-angle-left-circle"></span>
+               </a>
+               <!-- searchbar-->
+              
+                     
+                                    
+            </nav>
+
+         </header>
+         <!-- =============================================== -->
+         <aside class="main-side">
+            <!-- sidebar -->
+            <%- include('adminsidebar') %>
+
+            <!-- /.sidebar -->
+         </aside>
+         <!-- =============================================== -->
+         <!-- =============================================== -->
+         <!-- Content Wrapper. Contains page content -->
+         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+               <div class="header-icon">
+                  <i class="fa fa-money"></i>
+               </div>
+               <div class="header-title">
+                  <h1>EXAMLIST</h1>
+                  <small>Add and Delete courses.</small>
+               </div>
+            </section>
+            <!-- Main content -->
+            <section class="content">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="panel panel-bd lobidrag">
+                        <div class="panel-heading">
+                      
+                              <a href="#">
+                                 <h4>ADD/DELETE COURSES</h4>
+                              </a>
+                           </div>
+                        </div>
+                           <form method="post" action='/regexam'>
+                            <div class="form-group ">
+                                <label>Department</label>
+                                    <input type="text"  id="username" class="form-control" name="dept">
+                                       </div>
+                                  
+                                   <div class="form-group ">
+                                  <label> Class </label>
+                                    <input type="text"  id="username" class="form-control" name="clazz">
+                                    </div>
+
+                                 <div class="form-group ">
+                                    <label>Course code </label>
+                                    <input type="text"  id="username" class="form-control" name="ccode">
+                                    </div>
+
+                                    <div class="form-group ">
+                                    <label>Course Title </label>
+                                    <input type="text"  id="username" class="form-control" name="ctitl">
+                                    </div>
+
+                                     <div class="form-group ">
+                                    <label>Session </label>
+                                    <input type="text"  id="username" class="form-control" name="sessn" >
+                                     </div>
+
+                                   <div class="form-group ">
+                                    <label>Semester </label>
+                                    <input type="text"  id="username" class="form-control" name="seme" >
+                                     </div>
+
+                                     <div class="form-group ">
+                                    <label>Exam Date </label>
+                                    <input type="date"  id="username" class="form-control" name="exdate" >
+                                     </div>
+
+                                     <div class="form-group ">
+                                    <label>Exam Time start </label>
+                                    <input type="time"  id="username" class="form-control" name="starttime" >
+                                     </div>
+                                      
+                                      <div class="form-group ">
+                                    <label>Exam Time end </label>
+                                    <input type="time"  id="username" class="form-control" name="endtime" >
+                                     </div>
+
+
+                                <div class="form-group ">
+                               <input type= "submit"  name='/regexam' value="Submit course"> <br>
+                                <br>
+
+</form>
+ </div>
+
+
+                           <!-- ./Plugin content:powerpoint,txt,pdf,png,word,xl -->
+                           <div class="table-responsive">
+                              <table id="dataTableExample1" class="table table-bordered table-striped table-hover">
+                                 <thead>
+                                    <tr class="info">
+                                       <th>S/N</th>
+                                       <th>DEPARTMENT</th>
+                                       <th>CLASS</th>
+                                       <th>COURSE CODE</th>
+                                       <th>COURSE TITLE</th>
+                                       <th>SESSION</th>
+                                       <th>SEMESTER</th>
+                                       <th>VIEW</th>
+                                       <th>EXAM DATE</th>
+                                       <th>EXAM STARTTIME</th>
+                                       <th>EXAM ENDTIME</th>
+                                       <th>EDIT EXAM TIME</th>
+                                       <th>REMOVE EXAM</th>
+                                       
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <% if (courses.length > 0) { %>
+                                      <% courses.forEach(function(course, index) { %>
+                                        <tr>
+                                          <td><%= index + 1 %></td>
+                                          <td><%= course.dept %></td>
+                                          <td><%= course.clazz %></td>
+                                          <td><%= course.ccode %></td>
+                                          <td><%= course.ctitl %></td>
+                                          <td><%= course.sessn %></td>
+                                          <td><%= course.seme %></td>
+      
+                                           
+                                          <td>
+                                            <form method="POST" action='/view'>
+                                              <input type="hidden" name="crease2" value="<%= course.id %>">
+                                              <input type="hidden" name="dept2" value="<%= course.dept %>">
+                                              <input type="hidden" name="sessn2" value="<%= course.sessn %>">
+                                              <input type="hidden" name="ccode2" value="<%= course.ccode %>">
+                                              <button type="submit" name='/view'>View Submitted</button>
+                                            </form>
+                                          </td>
+
+                                          <td><%= course.proposeddate %></td>
+                                          <td><%= course.starttime%></td>
+                                          <td><%= course.endtime %></td>
+                                        
+                                          <td>
+                                            <form method="POST" action='/edit'>
+                                              <input type="hidden" name="crease3" value="<%= course.id %>">
+                                              <input type="hidden" name="seme3" value="<%= course.seme %>">
+                                              <input type="hidden" name="ctitl3" value="<%= course.ctitl %>">
+                                              <input type="hidden" name="clazz3" value="<%= course.clazz %>">
+                                              <input type="hidden" name="dept3" value="<%= course.dept %>">
+                                              <input type="hidden" name="sessn3" value="<%= course.sessn %>">
+                                              <input type="hidden" name="ccode3" value="<%= course.ccode %>">
+                                              <input type="hidden" name="exdate" value="<%= course.proposeddate %>">
+                                              <input type="hidden" name="examstart" value="<%=course.starttime%>">
+                                              <input type="hidden" name="examend" value="<%= course.endtime %>">
+                                              <button type="submit" name='/edit'>Edit Exam Time</button>
+                                            </form>
+                                          </td>
+                                          <td>
+                                             <form method="POST" action="/delete-course">
+                                                <!-- Include other form fields or hidden inputs if needed -->
+                                                <input type="hidden" name="crease3" value="<%= course.id %>">
+                                                <button type="submit" name="deletecourse">Delete Course</button>
+                                            </form>
+                                            
+                                          </td>
+                                        </tr>
+                                      <% }); %>
+                                    <% } else { %>
+                                      <tr>
+                                        <td colspan="7" style="text-align: center;">Table is empty</td>
+                                      </tr>
+                                    <% } %>
+                                  </tbody>
+                                  
+                               </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- /.content -->
+         </div>
+         <!-- /.content-wrapper -->
+         <div>
+            <footer class="main-footer">
+               <strong>Copyright &copy; <%= currentYear %> <a href="#"> CITM </a>.</strong> All rights reserved.
+            </footer>
+         </div>
+      <!-- ./wrapper -->
+      <!-- Start Core Plugins
+         =====================================================================-->
+      <!-- jQuery -->
+      <script src="assets/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+      <!-- jquery-ui --> 
+      <script src="assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+      <!-- Bootstrap -->
+      <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+      <!-- lobipanel -->
+      <script src="assets/plugins/lobipanel/lobipanel.min.js" type="text/javascript"></script>
+      <!-- Pace js -->
+      <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+      <!-- table-export js -->
+      <script src="assets/plugins/table-export/tableExport.js" type="text/javascript"></script>
+      <script src="assets/plugins/table-export/jquery.base64.js" type="text/javascript"></script>
+      <script src="assets/plugins/table-export/html2canvas.js" type="text/javascript"></script>
+      <script src="assets/plugins/table-export/sprintf.js" type="text/javascript"></script>
+      <script src="assets/plugins/table-export/jspdf.js" type="text/javascript"></script>
+      <script src="assets/plugins/table-export/base64.js" type="text/javascript"></script>
+      <!-- dataTables js -->
+      <script src="assets/plugins/datatables/dataTables.min.js" type="text/javascript"></script>
+      <!-- SlimScroll -->
+      <script src="assets/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+      <!-- FastClick -->
+      <script src="assets/plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
+      <!-- CRMadmin frame -->
+      <script src="assets/dist/js/custom.js" type="text/javascript"></script>
+      <!-- End Core Plugins
+         =====================================================================-->
+      <!-- Start Theme label Script
+         =====================================================================-->
+      <!-- Dashboard js -->
+      <script src="assets/dist/js/dashboard.js" type="text/javascript"></script>
+      <!-- End Theme label Script
+         =====================================================================-->
+
+   </body>
+
+<!-- Mirrored from thememinister.com/crm/view-tsaction.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 Aug 2019 13:28:46 GMT -->
+</html>
+
