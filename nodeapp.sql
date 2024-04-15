@@ -11,7 +11,7 @@
  Target Server Version : 80300 (8.3.0)
  File Encoding         : 65001
 
- Date: 28/02/2024 12:50:50
+ Date: 15/04/2024 13:42:37
 */
 
 SET NAMES utf8mb4;
@@ -54,19 +54,21 @@ CREATE TABLE `courses` (
   `endtime` varchar(100) NOT NULL,
   `proposeddate` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
 
 -- ----------------------------
 -- Records of courses
 -- ----------------------------
 BEGIN;
-INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (1, 'Office Technology management', 'ND1 PT', 'OTM 113', 'ICT 1', '2019/2020', 'first semester', '12:07', '12:35', '2024-02-13');
+INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (1, 'Office Technology management', 'ND1 PT', 'OTM 113', 'ICT 1', '2019/2020', 'first semester', '06:30', '14:00', '2024-04-09');
 INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (2, 'Office Technology management', 'HND1 PT', 'OTM 311', 'Shorthandiv 80 WPM', '2019/2020', 'first semester', '17:13', '20:30', '2020-02-24');
 INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (3, 'Office Technology management', 'HND 2PT', 'OTM 326', 'Shortandv 100WPM', '2019/2020', 'first semester', '09:00', '19:30', '2020-02-24');
 INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (7, 'OTM', 'nd1', 'Ict301', 'office technical', '2023', 'second', '12:30', '15:30', '2024-02-13');
-INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (9, 'Engineering', 'ND 1', 'Eng 301', 'Engineering technical', '2023/2024', 'First Semester', '12:18', '12:34', '2024-02-28');
+INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (9, 'Engineering', 'ND 1', 'Eng 301', 'Engineering technical', '2023/2024', 'First Semester', '08:00', '10:00', '2024-03-15');
 INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (10, 'Engineering', 'HND2', 'Eng103', 'pact engineering', '2022/2023', 'First semester', '11:52', '12:53', '2024-02-21');
-INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (11, 'Technical ', 'Nd2', 'Tech 123', 'technical upholstery', '2023/2024', 'Second semester', '12:00', '13:00', '2024-02-20');
+INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (11, 'Technical ', 'Nd2', 'Tech 123', 'technical upholstery', '2023/2024', 'Second semester', '13:00', '13:25', '2024-02-20');
+INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (14, 'Science', 'ND 1', 'Engb 301', 'office technical', '2024/2025', 'First Semester', '12:09', '13:10', '2024-04-10');
+INSERT INTO `courses` (`id`, `dept`, `clazz`, `ccode`, `ctitl`, `sessn`, `seme`, `starttime`, `endtime`, `proposeddate`) VALUES (16, 'Technical engineering', 'HND1', 'TE11', 'technical  mains', '2024/2025', 'Second semester', '07:00', '14:00', '2024-04-16');
 COMMIT;
 
 -- ----------------------------
@@ -83,7 +85,7 @@ CREATE TABLE `euploads` (
   `statuz` varchar(100) NOT NULL DEFAULT '0',
   `ip` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1647 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=1661 DEFAULT CHARSET=utf8mb3;
 
 -- ----------------------------
 -- Records of euploads
@@ -1556,7 +1558,7 @@ INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, 
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1465, 'OSENI KEHINDE', 'YCT1568802635', 'OTM 113', '68936YCT1568802635.docx', 'Feb 24, 2020 07:15 pm', '0', '');
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1466, 'OKAFOR PATRICIA UCHE', 'PHD183630041', 'OTM 413', '94552phd183630041.accdb', 'Feb 24, 2020 07:28 pm', '0', '');
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1503, 'sandra nwakwegu', 'p/nd/23/34270', 'Ict301', 'sandra nwakwegueli.docx', 'Jan 17, 2024 01:42 pm', '1', NULL);
-INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1504, 'sefiu Oladejo', 'p/nd/21/341270', 'Ict301', 'sefiu Oladejo_CITM Memo Format.docx', 'Feb 7, 2024 2:22 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1504, 'sefiu Oladejo', 'p/nd/21/341270', 'Ict301', 'sefiu Oladejo_CITM Memo Format.docx', 'Feb 7, 2024 2:22 PM', '1', NULL);
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1505, 'sefiu Oladejo', 'p/nd/21/341270', 'Ict301', 'sefiu Oladejo_Fathers in the Bible.docx', 'Feb 7, 2024 3:47 PM', '1', NULL);
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1506, 'sefiu Oladejo', 'p/nd/21/341270', 'Ict301', 'sefiu Oladejo_adaeli.docx', 'Feb 7, 2024 3:53 PM', '0', NULL);
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1507, 'sefiu Oladejo', 'p/nd/21/341270', 'Ict301', 'sefiu Oladejo_CHAPTER ONE (1).docx', 'Feb 7, 2024 4:02 PM', '1', NULL);
@@ -1699,6 +1701,20 @@ INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, 
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1644, 'ada', 'p/nd/23/34270', 'Eng 301', 'ada_my curriculum vitae detailed  (3) (1).docx', 'Feb 27, 2024 5:53 PM', '0', NULL);
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1645, 'ada', 'p/nd/23/34270', 'Eng 301', 'ada_adaeli.docx', 'Feb 28, 2024 12:22 PM', '0', NULL);
 INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1646, 'ada', 'p/nd/23/34270', 'Eng 301', 'ada_CHAPTER ONE (1).docx', 'Feb 28, 2024 12:22 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1647, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_34444Chapter twoo.docx', 'Apr 9, 2024 10:39 AM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1648, 'jeremiah', 'p/nd/23/34270', 'OTM 113', 'jeremiah_Chapter twoo.docx', 'Apr 9, 2024 11:14 AM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1649, 'jeremiah', 'p/nd/23/34270', 'OTM 113', 'jeremiah_CHAPTER ONE.docx', 'Apr 9, 2024 11:19 AM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1650, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_34444Chapter twoo.docx', 'Apr 9, 2024 1:10 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1651, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_KRA REAL (1).pdf', 'Apr 9, 2024 1:16 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1652, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_KRA REAL.pdf', 'Apr 9, 2024 1:25 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1653, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_CHAPTER ONE (1).docx', 'Apr 9, 2024 1:28 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1654, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_Webometrics 2024 Annual Report.docx', 'Apr 9, 2024 1:30 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1655, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_WertySelflove.docx', 'Apr 9, 2024 1:37 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1656, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_adaeli.docx', 'Apr 9, 2024 1:48 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1657, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_Chapter twoo.docx', 'Apr 9, 2024 1:48 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1658, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_CHAPTER ONE (1).docx', 'Apr 9, 2024 1:51 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1659, 'ada', 'p/nd/23/34270', 'OTM 113', 'ada_Corps Member Clearance Letter.docx', 'Apr 9, 2024 1:56 PM', '0', NULL);
+INSERT INTO `euploads` (`id`, `fulln`, `matno`, `courseid`, `filelink`, `dreg`, `statuz`, `ip`) VALUES (1660, 'ada', 'p/nd/23/34270', 'Engb 301', 'ada_Corps Member Clearance Letter.docx', 'Apr 10, 2024 12:24 PM', '1', NULL);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
